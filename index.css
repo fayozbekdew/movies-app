@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  li {
+    position: relative;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  body {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .navbar{
+    box-shadow: -1px 12px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 12px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 12px 12px 0px rgba(0,0,0,0.75);
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .search-value{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    gap: 1rem;
+    row-gap: 3rem;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .category-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    gap: 1rem;
+    row-gap: 3rem;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .opacityAnimationPlus{
+    transition: all 2s;
+    animation: opacityPlus 2s linear;
+  }
+  .opacityAnimation{
+    transition: all 2s;
+    animation: opacityMinus 2s linear;
+  }
+@keyframes opacityMinus{
+  0%{
+    opacity: 1;
+    height: 80vh;
+  }
+  25%{
+   opacity: 0.75;
+   height: 60vh;
+  }
+  50%{
+ opacity: 0.5;
+ height: 40vh;
+  }
+  75%{
+ opacity: 0.25;
+ height: 20vh;
+  }
+  100%{
+  opacity: 0;
+  height: 0vh;
+  }
+}
+@keyframes opacityPlus{
+  0%{
+    opacity: 0;
+    height: 0%;
+  }
+  25%{
+   opacity: 0.25;
+   height: 25%;
+  }
+  50%{
+ opacity: 0.5;
+ height: 50%;
+  }
+  75%{
+ opacity: 0.75;
+ height: 75%;
+  }
+  100%{
+  opacity: 1;
+  height: 100%;
+  }
+}
