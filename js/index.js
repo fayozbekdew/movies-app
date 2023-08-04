@@ -206,23 +206,23 @@ categoryItems.forEach((item) => {
         categoryCards.innerHTML = ``
         switch (item.textContent) {
             case 'Comedy':
-                getCategory('home')
+                getCategory('comedy')
                 .then((data) => updateUiCategory(data))
                 break;
             case 'Horror':
-                getCategory('home')
+                getCategory('horror')
                 .then((data) => updateUiCategory(data))
                 break;
             case 'Drama':
-                getCategory('home')
+                getCategory('drama')
                 .then((data) => updateUiCategory(data))
                 break;
             case 'Fantasy':
-                getCategory('home')
+                getCategory('fantasy')
                 .then((data) => updateUiCategory(data))
                 break;
             case 'Action':
-                getCategory('home')
+                getCategory('action')
                 .then((data) => updateUiCategory(data))
                 break;
         }

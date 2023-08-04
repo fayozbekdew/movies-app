@@ -81,6 +81,7 @@
     row-gap: 3rem;
     padding-top: 50px;
     padding-bottom: 100px;
+    place-content: center;
   }
   .opacityAnimationPlus{
     transition: all 2s;
