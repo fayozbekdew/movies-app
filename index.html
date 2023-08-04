@@ -17,7 +17,6 @@
     <script src="./js/fetch.js"></script>
     <script defer src="./js/index.js"></script>
     <script defer src="./js/swiperAnimtion.js"></script>
-    <script defer src="./js/home.js"></script>
     <!-- Tailwind-css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -75,9 +74,9 @@
 
 <body class="select-none">
     <header >
-        <div class="navbar bg-[#efeaea] tablet-extra:bg-blue-500 py-[10px] fixed z-50 w-full">
+        <div class="navbar bg-yellow-200 tablet-extra:bg-blue-500 py-[10px] fixed z-50 w-full">
             <div class="container  mx-auto flex justify-between">
-                <a class="flex px-[20px] solid py-[5px] border " href="./index.html" class="site-logo">
+                <a class="flex px-[20px] py-[5px]" href="./index.html" class="site-logo">
                     <p class="text-red-600 text-[25px]">Full<span class="text-white text-[15px]">Movie</span></p>
                 </a>
                 <ul class="flex pr-[50px] gap-x-[15px]">
@@ -90,7 +89,7 @@
                 </ul>
             </div>
         </div>
-        <div class="bg-yellow-500 mt-[100px]  h-fit py-[20px]">
+        <div class="bg-yellow-500 mt-[73px]  h-fit pb-[20px] pt-[30px]">
             <div class="container  mx-auto flex items-center gap-x-5 ">
                 <h1 class="font-bold">Search movie:</h1>
                 <div class="relative w-[100%] max-w-[300px] block ">
@@ -163,6 +162,8 @@
                 </div>
                 <div  class="swiper mySwiper">
                     <div id="favorite-list" class="swiper-wrapper">
+                        <!-- CONTENT -->
+                       
                     </div>
                 </div>
             </div>
@@ -200,11 +201,10 @@
             </div>
         </section>
     </main>
-    <footer class="h-[100px] bg-yellow-500">
-        <div class="container mx-auto py-[20px] flex items-center justify-between">
-            <a class="flex w-full max-w-[150px] px-[20px] solid py-[5px] border border-red-500" href="./index.html" class="site-logo">
-                <h3 class="font-bold text-[30px] text-red-600">Full</h3>
-                <h5 class="text-[20px] text-white pt-[12px]">Movie</h5>
+    <footer class="h-[70px] bg-yellow-200">
+        <div class="container mx-auto pt-[20px] flex items-center justify-between">
+            <a class="flex w-full max-w-[150px] px-[20px]  py-[5px] " href="./index.html" class="site-logo">
+                <p class="text-red-600 text-[25px]">Full<span class="text-white text-[15px]">Movie</span></p>
             </a> 
             <p>Create by <a class="text-red-600 font-bold underline" href="https://portfolio-fayozbek.netlify.app/">Fayozcik</a></p>
         </div>

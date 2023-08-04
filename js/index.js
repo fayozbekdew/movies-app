@@ -49,7 +49,7 @@ const updateUi = (movieInfo) => {
         <div class="swiper-slide relative w-full  max-w-[250px] h-[300px] px-[10px] rounded-[5px]">
                             <a href="#">
                                 <img class="w-full max-w-[220px] h-[100px] mt-2 rounded-[5px]" src=${item.Poster}>
-                                <h3 class="absolute bottom-0 left-3 w-full max-w-[220px] text-center px-[0px] bg-red-500 py-[5px] rounded-[5px]">${item.Title}</h3>
+                                <h3 class="absolute bottom-0 left-3 w-full max-w-[220px] text-center px-[0px]  py-[5px] rounded-[5px]">${item.Title}</h3>
                             </a>
                       </div>
         `
@@ -92,11 +92,9 @@ const updateUiFav = (movieInfoFav) => {
    if(movieInfoFav.Response === 'True') {
     movieInfoFav.Search.map((item) => {
         favoriteList.innerHTML += `
-                      <div class="swiper-slide relative w-full  max-w-[250px] h-[300px] px-[10px] rounded-[5px]">
-                            <a href="#">
-                                <img class="w-full max-w-[230px] mt-2 rounded-[5px]" src=${item.Poster} alt="movie img">
-                                <h3 class="absolute bottom-1 left-0 w-full  text-center px-[10px] bg-red-500 py-[5px] rounded-[5px]">${item.Title}</h3>
-                            </a>
+                      <div class="swiper-slide relative w-full  max-w-[250px] h-[300px] bg-slate-400 px-[10px] rounded-[5px]">
+                                <img class="w-full max-w-[230px]  mt-2 rounded-[5px]" height="200" src=${item.Poster} alt="movie img">
+                                <h3 class="absolute bottom-3 left-0 w-full  text-center px-[10px] bg-orange-400 py-[5px] rounded-[5px]">${item.Title}</h3>
                       </div>
         `
     })
